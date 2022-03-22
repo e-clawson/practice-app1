@@ -2,7 +2,7 @@ require_relative './config/environment'
 require 'sinatra/activerecord/rake'
 
 def reload
-    load all "./app" if Dir.exists?("./app")
+    load_all "./app" if Dir.exists?("./app")
 end
 
 desc "rake console"
